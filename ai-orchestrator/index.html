@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa"><title>Orbit — AI workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="rail"><a class="brand" href="#" aria-label="Orbit home"><span class="brand-mark">o</span><span>orbit</span></a><div class="rail-label">WORKSPACE</div><button class="nav active"><span>✳</span> AI workspace</button><button class="nav" id="clear-chat"><span>◷</span> New conversation</button><div class="rail-bottom"><div class="avatar">T</div><div><strong>Personal workspace</strong><small>Free plan</small></div><span class="dots">···</span></div></aside>
+  <main class="main"><header class="top"><div class="breadcrumbs">Workspace <span>/</span> <b>AI workspace</b></div><div class="top-right"><span class="status-dot"></span> All systems operational <button class="help">?</button></div></header>
+    <section class="content"><div class="eyebrow"><span class="spark">✳</span> YOUR AI WORKSPACE <span class="beta">BETA</span></div><h1>One workspace.<br><span>Every great model.</span></h1><p class="subhead">Bring your ideas. Pick the intelligence that fits.<br class="wide"> Get thoughtful answers, one prompt at a time.</p>
+      <div class="model-row"><div><label class="field-label">MODEL</label><div class="select-wrap"><span class="provider-icon openai" id="provider-icon">✳</span><select id="provider" aria-label="Select AI model"><option value="openai">OpenAI <span>·</span> GPT-4o mini</option><option value="anthropic">Anthropic <span>·</span> Claude 3.5 Haiku</option><option value="gemini">Google <span>·</span> Gemini 2.0 Flash</option></select><span class="chevron">⌄</span></div></div><div class="model-note"><span class="lock">⌑</span> Your API key stays on your server</div></div>
+      <section class="chat-card" aria-label="AI conversation"><div id="messages" class="messages"><div class="welcome"><div class="welcome-icon">✳</div><h2>What are we working on?</h2><p>Ask a question, explore an idea, or get help with your next big thing.</p><div class="suggestions"><button class="suggestion">✦ &nbsp;Help me write something</button><button class="suggestion">⌘ &nbsp;Explain a complex topic</button><button class="suggestion">↗ &nbsp;Brainstorm ideas</button></div></div></div><form id="chat-form" class="composer"><textarea id="prompt" rows="1" placeholder="Message your AI assistant..." aria-label="Message your AI assistant"></textarea><div class="composer-bottom"><span><kbd>↵</kbd> to send · <kbd>shift + ↵</kbd> for a new line</span><button class="send" type="submit" aria-label="Send message"><span>↑</span></button></div></form></section>
+      <footer><span>✳</span> Thoughtful intelligence, made simple <span class="footer-divider">·</span> <a href="https://openai.com/policies/terms-of-use">Terms</a><a href="https://openai.com/policies/privacy-policy">Privacy</a></footer>
+    </section>
+  </main><script src="/app.js"></script>
+</body></html>
